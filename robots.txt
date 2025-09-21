@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ar1704.github.io/sitemap.xml
