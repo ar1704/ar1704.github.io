@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ummehabiba Dhalayat — AI/ML & Web Developer</title>
+  <meta name="description" content="Fresher portfolio showcasing AI/ML and web development projects, skills, and resume." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph (link preview) -->
+  <meta property="og:title" content="Ummehabiba Dhalayat — Portfolio" />
+  <meta property="og:description" content="Projects, skills, and resume." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ar1704.github.io/" />
+  <meta property="og:image" content="https://ar1704.github.io/og-image.png" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <h1>Hi, I'm Your Name 👋</h1>
-    <nav>
+  <!-- Navigation / Hero -->
+  <header class="site-header">
+    <h1>Hi, I'm <span class="accent">Ummehabiba Dhalayat</span> 👋</h1>
+    <nav class="top-nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a class="btn" href="resume.pdf" download>Resume</a>
     </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- About -->
+  <section id="about" class="container">
     <h2>About Me</h2>
     <p>I’m a fresher passionate about AI/ML and web development. I love building projects that solve real-world problems.</p>
+    <p><strong>Currently learning:</strong> NLP pipelines, model deployment (FastAPI), and responsive UI patterns.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
+  <!-- Skills -->
+  <section id="skills" class="container">
     <h2>Skills</h2>
-    <ul>
+    <ul class="skills">
       <li>Python, C++, Java</li>
-      <li>Machine Learning, AI</li>
+      <li>Machine Learning, AI, NLP</li>
       <li>HTML, CSS, JavaScript</li>
       <li>SQL, Git/GitHub</li>
     </ul>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- Projects -->
+  <section id="projects" class="container">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Depression Detection from Social Media Posts</h3>
-      <p>Built a machine learning model to classify user posts into depression vs non-depression using NLP.</p>
-      <a href="#">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Personal Portfolio Website</h3>
-      <p>This very website you’re looking at 🙂</p>
+    <div class="projects-grid">
+      <article class="card">
+        <h3>Depression Detection (NLP)</h3>
+        <ul>
+          <li>Classifies posts as depression / non-depression using text features.</li>
+          <li>Preprocessing: tokenization, stopwords, TF-IDF; model: Logistic/SVM.</li>
+          <li>Deployed as a simple Streamlit demo.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/ar1704/depression-detection" target="_blank">Code</a>
+          · <a href="#" target="_blank">Demo</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <li>Responsive single-page site hosted on GitHub Pages.</li>
+          <li>Clean layout, SEO meta, sitemap, contact form (Formspree).</li>
+          <li>Fully static—no backend required.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/ar1704/ar1704.github.io" target="_blank">Code</a>
+          · <a href="https://ar1704.github.io/" target="_blank">Live</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Royal Tiles — PHP Inventory & P/L</h3>
+        <ul>
+          <li>Inventory, Quotation, Invoice, Returns, Profit/Loss analytics.</li>
+          <li>Box↔sqft conversion, transport %, commission rules.</li>
+          <li>Stack: PHP, MySQL, Bootstrap.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/ar1704/royal-tiles" target="_blank">Code</a>
+          · <a href="#" target="_blank">Live</a>
+        </p>
+      </article>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: yourname@gmail.com</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-    <p>GitHub: <a href="#">github.com/yourname</a></p>
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+      <input name="name" type="text" placeholder="Your name" required />
+      <input name="email" type="email" placeholder="Your email" required />
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p class="socials">
+      <a href="mailto:arshiyadhalayat2004@gmail.com">arshiyadhalayat2004@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/ummehabiba-dhalayat-02848a278" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/ar1704" target="_blank">GitHub</a>
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Ummehabiba Dhalayat. All rights reserved.</p>
   </footer>
 </body>
 </html>
